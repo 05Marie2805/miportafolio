@@ -1,3 +1,11 @@
-h2{
+.font-12em {
+font: size 10em;
+color: blueviolet;
+}
+p.font-5m{
     font-size: 5em;
+}
+p.font-8em {
+    font-size: 8em;
+    color: firebrick;
 }
