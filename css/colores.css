@@ -1,0 +1,52 @@
+ h1{
+    text-align: center;
+}
+.box-direction {
+    display: flex;
+    flex-direction: row;
+}
+.box-style {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    font-size: 1.4em;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-weight: 900;
+
+    
+}
+.box-brown{
+    background-color:brown;
+}
+.box-cadetblue{ 
+    background-color:cadetblue;
+}
+.box-cornflowerblue {
+    background-color: cornflowerblue;
+}
+
+.box-127-166-153 {
+    background-color:rgb(127, 166, 153)
+}
+
+.box-72-188-107 {
+    background-color:rgb(72, 188, 107)
+}
+
+.box-173-136-208 {
+    background-color:rgb(173, 136, 208)
+}
+.box-0000ff {
+    background-color:#0000ff
+}
+.box-8a2be2 {
+    background-color:#8a2be2 
+}
+.box-dc2440 {
+    background-color:#dc2440
+}
