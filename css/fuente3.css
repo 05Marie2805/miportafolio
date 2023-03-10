@@ -1,12 +1,27 @@
-h2{
-    font-family: waltograph, sans-serif;
+* {
+    margin: 0; 
+    padding: 0;
 }
-/* bebas-neue-regular - latin */
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2,12,66);
+    color: white;
+    height: 100vh;
+    width: 100%;
+}
+label {
+    font-family: 'waltograph';
+    font-size: 12em;
+    text-align: center;
+}
+/* waltograph*/
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'waltograph';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/waltograph42.otf'); /* IE9 Compat Modes */
-    src: url('../fonts/waltographUI.ttf'); /* IE6-IE8 */
+    src: url('../fonts/waltograph42.otf'), /* IE9 Compat Modes */
+         url('../fonts/waltographUI.ttf'); /* IE6-IE8 */
      }
