@@ -21,7 +21,6 @@
 }
 img{
     margin-top: 20px;
-    
 }
 /* Caja de color */
 .add-cart-1 {
@@ -52,8 +51,8 @@ img{
 }
 .text-description {
     background-color: white;
-    color:rgba(52,44,44,.9);
-    font-size: .8em;
+    color:rgba(51,43,43,.9);
+    font-size: 8em;
 }
 .price-text {
     background-color: white;
