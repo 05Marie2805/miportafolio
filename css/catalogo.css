@@ -49,10 +49,10 @@ img{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:rgba(52,44,44,.9);
 }
-.text-description {
+.text-descripcion {
     background-color: white;
     color:rgba(51,43,43,.9);
-    font-size: 8em;
+    font-size: 0.9em;
 }
 .price-text {
     background-color: white;
