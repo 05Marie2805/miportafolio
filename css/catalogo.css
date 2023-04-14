@@ -6,7 +6,7 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
-    
+
     /*vh: view height */
     /* height: 1vh; */
 }
@@ -19,6 +19,7 @@
     height: 490px;
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
+    margin-top: 10vh;
 }
 .product-box {
     width: 250px;
