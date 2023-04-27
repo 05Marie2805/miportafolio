@@ -25,7 +25,6 @@ th, td {
     background-color: rgb(43, 1, 157);
 }
 .color-yellow {
-    border-bottom-right-radius:20px ;
     background-color:  rgb(85, 39, 164);
 }
 .color-orange {
@@ -39,7 +38,6 @@ th, td {
     background-color:  rgb(43, 1, 157);
 }
 .bg-darckyan{
-    border-bottom-left-radius: 20px;
     background-color: rgb(43, 1, 157);
     color: white;
 }
@@ -51,6 +49,14 @@ th, td {
     background-color: rgb(69, 18, 156);
     color: white;
 }
+.color-box-1{
+    border-bottom-left-radius: ;
+    background-color: rgb(69, 18, 156);
+    color: white;
+
+}
+
+
 .th-paquete {
     border-top-left-radius: 20px;
     background-color: rgb(86, 3, 144);
