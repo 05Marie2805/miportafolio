@@ -3,12 +3,12 @@
     padding: 0;
 }
 .main-nav{
-    background-color:  rgb(118, 150, 238);
+    background-color:   rgb(34, 106, 126);
     color: rgb(255, 255, 255);
     text-align: center
 }
 .main-menu {
-  background-color: rgb(118, 150, 238);
+  background-color:  rgb(34, 107, 127);
   color: white;
   height: 80px;
   font-family: 'Poppins', sans-serif;
@@ -23,7 +23,7 @@
 }
 .item-style:hover {
     cursor: pointer;
-    background-color: rgb(141, 163, 206);
+    background-color: rgb(5, 133, 149);
     height: 32px;
 }
 a  {
@@ -37,7 +37,7 @@ a  {
 @media only screen and (max-width: 1500px) {
     .main-menu{
         height: 100vh;
-        background-color: rgb(35, 68, 114);
+        background-color: rgb(15, 41, 58);
         text-align: center;
     }
     .item-style {

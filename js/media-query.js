@@ -1,5 +1,5 @@
-let menuBar = document.getElelemtById("menuBar");
+let menuBar = document.getElementById("menuBar")
 
-menuBar.addEventListener("click", function () {
-alert ("funciona");
+menuBar.addEventListener("click", function() {
+ alert("Bienvenido")
 });
