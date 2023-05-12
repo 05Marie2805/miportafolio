@@ -5,16 +5,19 @@
 .main-nav{
     background-color:   rgb(34, 106, 126);
     color: rgb(255, 255, 255);
-    text-align: center
+    text-align: center;  
+    font-size: 1.3em;
+    font-family: 'Poppins', sans-serif;
 }
+.main-nav-2{
+    background-color:   rgb(1, 63, 134);
+    color: rgb(255, 255, 255);
+    text-align: center}
 .main-menu {
   background-color:  rgb(34, 107, 127);
   color: white;
   height: 80px;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight:700;
-  font-size: 1.3em;
 }
 .item-style {
     padding: 20px 30px 28px 30px;
@@ -33,16 +36,22 @@ a  {
 .menu-bar {
     display: none;
 }
-
 @media only screen and (max-width: 1500px) {
     .main-menu{
-        height: 100vh;
-        background-color: rgb(15, 41, 58);
-        text-align: center;
+        display: none;
     }
+    .main-menu-block {
+        height: 100vh;
+        background-color: rgb(22, 22, 37);
+        list-style: none;
+        text-align: center;
+        color: white;
+    }
+    
     .item-style {
         display: block;
         border-bottom: 1px solid rgb(175, 150, 150); 
+        transition: ;
 
     }
     .menu-bar {
@@ -50,7 +59,7 @@ a  {
         color: rgb(255, 255, 255);
         padding-top: 15px;
         margin-left: 20px;
-        font-size: 2em;
+        font-size: 2em; 
 }
     .menu-bar:hover {
         cursor: pointer;
