@@ -1,0 +1,31 @@
+{
+  text
+}
+.box-style {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color: white;
+  font-size: 1.4em;
+  text-align:;
+  font-family: Verdana, sans-serif;
+  font-weight: 900;
+}
+.box-brown{
+   background-color:rgb(136, 150, 204);
+}
+.box-cadetblue{ 
+    background-color:rgb(64, 132, 209);
+}
+.box-cornflowerblue {
+    background-color: rgb(20, 70, 170);
+}
+
+.box-red {
+  background-color: rgb(43, 60, 128);
+  bottom: 100px;
+  left: 100px;
+}
