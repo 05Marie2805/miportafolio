@@ -1,0 +1,59 @@
+*{
+    margin:  0;
+    padding:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+nav ul {
+    background-color: rgb(38, 25, 76);
+    font-size: 1.5rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+nav li{
+    list-style: none;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+nav li:hover{
+    background-color: rgb(124, 112, 171);
+}
+/* li{
+    list-style: none; 
+    width:250px
+    display: incline-block; 
+    text-align: center
+}
+nav li {
+    position: relative
+    line-height: 60px;
+} */
+nav a {
+    text-decoration: none;
+    color:white
+}
+/* Menú Primer Nivel */
+nav > ul > li {
+    display: inline-block;
+    width: 250px;
+    line-height: 70px;
+}
+/* Menú Segundo Nivel */
+nav li:hover > ul > li {
+    max-height: 500px;
+    overflow: visible;
+    border-top: 1px solid rgb(193, 172, 255);
+    border-right: 1px solid rgb(193, 172, 255);
+    transition: max-height 1.5s;
+}
+nav li li {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s;
+}
+/* Menú de tercer nivel */
+nav ul ul ul {
+    left: 100%;
+    top:0;
+}
