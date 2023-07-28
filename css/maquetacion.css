@@ -41,31 +41,24 @@ header {
 .article {
     width: 100%;
     height: 350px;
-    background-color: rgb(55, 7, 7);
 }   
 .article-1 {
    grid-area: article-1;
-    background-color: rgb(242, 198, 137);
 }
 .article-2 {
     grid-area: article-2;
-     background-color: rgb(242, 198, 137);
 }
 .article-3 {
     grid-area:article-3;
-     background-color:  rgb(242, 198, 137);
 }
 .article-4 {
     grid-area: article-4;
-     background-color: rgb(242, 198, 137);
  }
  .article-5 {
      grid-area: article-5;
-      background-color: rgb(242, 198, 137);
  }
  .article-6 {
      grid-area:article-6;
-      background-color:  rgb(242, 198, 137);
  }
 .img-principal{
     grid-area: img-principal;
@@ -75,10 +68,19 @@ header {
     
 }
 .style-box {
-    color: rgb(255, 255, 255);
+    background-color: rgb(64,64,64,.8);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
     font-weight: 900;
+}
+.style-img-article {
+    height: 250px;
+    background-color: rgb(64,64,64,.8);
+}
+.style-texto-article {
+    line-height: 1.5em;
+    text-align: justify;
 }
