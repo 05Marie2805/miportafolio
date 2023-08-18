@@ -154,7 +154,7 @@
             padding: 20px;
             width: 100%;
             border-radius: 20px;
-            background-color: #f3f3f3;
+            background-color: #ffffff;
         }
         
         #sobremi .sobremi {
@@ -248,7 +248,7 @@
         }
         
         #servicios .fila .servicio:hover {
-            box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+            box-shadow: 5px 5px 10px #ffa2a2, -5px -5px 10px #8a8a8a;
         }
         
         #servicios .fila .servicio .icono {
