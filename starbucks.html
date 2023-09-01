@@ -1,57 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks</title>
-
+    <title>Document</title>
     <link rel="stylesheet" href="css/starbucks.css">
+    <link rel="stylesheet" href="icons/all.css">
 </head>
 <body>
-    
-    <section>
-        <div class="circle"></div>
-        <header>
-            <a href="#"><img src="img -starguas/logo.png" class="logo"></a>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contactanos</a></li>
-            </ul>
-        </header>
-        <div class="content">
-            <div class="textBox">
-                <h2>No es sólo café<br> Es <span>Starbucks</span></h2>
-                <p>Ven y disfruta tu bebida con tu color favorito :) </p>
-            </div>
-            <div class="imgBox">
-                <img src="img -starguas/img1 (1).png" class="starbucks">
-            </div>
+    <header>
+        <div class="main-logo">
+            <img class="img-logo" src="img/logo.png" alt="">
         </div>
-        <ul class="thumb"> 
-            <li><img src="img -starguas/thumb1.png"onclick="imgSlider('img -starguas/img1 (1).png');changeCircleColor('#017143')"></li>
-            <li><img src="img -starguas/thumb2 (1).png" onclick="imgSlider('img -starguas/img2 (1).png');changeCircleColor('#eb7495')"></li>
-            <li><img src="img -starguas/thumb3.png" onclick="imgSlider('img -starguas/img3.png');changeCircleColor('#d752b1')"></li>
-        </ul>
-        <ul class="sci">
-            <li><a href="#"><img src="img -starguas/facebook.png"></a></li>
-            <li><a href="#"><img src="img -starguas/twitter.png"></a></li>
-            <li><a href="#"><img src="img -starguas/instagram.png"></a></li>
-        </ul>
-    </section>
-
-    <script type="text/javascript">
-        function imgSlider(anything){
-            document.querySelector('.starbucks').src = anything
-        }
-
-        function changeCircleColor(color){
-            const circle = document.querySelector('.circle');
-            circle.style.background = color;
-        }
-    </script>
-
+        <div class="box-main-menu">
+            <ul class="main-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="product-text">
+            <h1>It´s not just Coffee<br>It's <span class="title-color">Starbucks</span></h1>
+            <h3 class="description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis molestiae quas doloribus. issimos neque quod omnis, dolores id voluptatum! Blanditiis quod adipisci nam hic fugit soluta</h3>
+            <input class="button-learn" type="button" value="LEARN MORE">
+        </div>
+        <div class="product-img">
+            <img id="iceStarbucks" src="img/ice-green.png" alt="">
+        </div>
+        <div class="social-media">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="style-img-mini fa-brands fa-twitter"></i>
+            <i class="style-img-mini fa-brands fa-instagram"></i>
+        </div>
+    </div>
+    <footer>
+        <img id="miniGreen" class="style-img-mini mini-green" src="img/icre-green-mini.png" alt="">
+        <img id="miniLightPink" class="style-img-mini mini-light-pink" src="img/ice-rose-mini.png" alt="">
+        <img id="miniDarkPink" class="style-img-mini mini-dark-pink" src="img/ice-pink-mini.png" alt="">
+    </footer>
+    <div id="mainCircle" class="main-circle main-circle-green"></div>
+    <script src="js/starbucks.js"></script>
 </body>
 </html>
