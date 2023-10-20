@@ -21,7 +21,83 @@ header {
                  1fr;
   
 }
+/* .main-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 800;
+  font-size: .4em;
+  color: rgb(0, 0, 0);
+}
+ 
+.main-content {
+  display: grid;
+  grid-template: "empty-left   box -left  empty-center box-info empty-right" 400px/
+                  240px         1fr          180px       1fr      240px; 
+} 
+.carrito-foto {
+  font-size: 1.6em; 
+  padding-right: 20px;
+}
 
+.foto {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  box-shadow:  0 -2px 5px red;
+} */
+nav ul {
+    background-color: rgb(255, 255, 255);
+    font-size: 1.0rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+nav li{
+    list-style: none;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+nav li:hover{
+    background-color: rgb(255, 228, 214);
+}
+/* li{
+    list-style: none; 
+    width:250px
+    display: incline-block; 
+    text-align: center
+}
+nav li {
+    position: relative
+    line-height: 60px;
+} */
+nav a {
+    text-decoration: none;
+    color:rgb(0, 0, 0)
+}
+/* Menú Primer Nivel */
+nav > ul > li {
+    display: inline-block;
+    width: 140px;
+    line-height: 70px;
+}
+/* Menú Segundo Nivel */
+nav li:hover > ul > li {
+    max-height: 500px;
+    overflow: visible;
+    border-top: 1px solid rgb(193, 172, 255);
+    border-right: 1px solid rgb(193, 172, 255);
+    transition: max-height 1.5s;
+}
+nav li li {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s;
+}
+/* Menú de tercer nivel */
+nav ul ul ul {
+    left: 100%;
+    top:0;
+}
 .box-img {
 grid-area:box-img;
 }
@@ -97,9 +173,45 @@ grid-template: "thumb-1  thumb-2  thumb-3  thumb-4"/
 }
 .thumb {
   width: 100%;
+  cursor: pointer;
   border-radius: 30px;
-  padding: 15px;
+/*   padding: 15px; */
+   z-index: 10;
+   position: relative;
+}
+.thumb:hover {
+  opacity: 0,7;
+} 
+.box-thumb {
+  margin: 15px;
+}
+.box-thumb:hover {
+ position: relative;
+ background-color: rgb(0, 0, 0,.9);
+ z-index: 20;
+ height: 127px;
+ border-radius: 30px;
 }
 .box-info {
   grid-area: box-info;
+}
+.box-img-fixed-hidden {
+  display: none;
+}
+.box-boton-cerrar {
+  position: fixed;
+  color: white;
+  background-color: gray;
+  border-radius: 30px;
+  font-size: 2em;
+  font-weight: 400;
+  font-family: sans-serif;
+  top: 20%;
+  left: 65%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
