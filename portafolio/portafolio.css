@@ -533,6 +533,10 @@
             margin: 5px;
             font-size: 26px;
         }
+        #overlayletra  {
+            text-decoration: none;
+            color: #000;
+        }
         /* *********************/
         /* seccion R E S P O N S I V E */
         /* *********************/
