@@ -16,18 +16,6 @@ let botonCerrar = document.getElementById("botonCerrar");
 mainImg.addEventListener("click", function() {
     boxImgFixed.classList.remove("box-img-fixed-hidden");
     boxImgFixed.classList.add("box-img-fixed");
-    /* mainImgFixed1.classList.remove(""); */
-/*         mainImgFixed1.classList.add("img-hidden");
-        mainImgFixed2.classList.remove("img-hidden");
-    }
-    else if (!mainImgFixed2.classList.contains("img-hidden")) {
-        mainImgFixed2.classList.add("img-hidden");
-        mainImgFixed3.classList.remove("img-hidden");
-    }
-    else if (!mainImgFixed3.classList.contains("img-hidden")) {
-        mainImgFixed3.classList.add("img-hidden");
-        mainImgFixed4.classList.remove("img-hidden");
-    } */
     
 });
 iconRight.addEventListener("click", function() {
@@ -88,10 +76,15 @@ thumb4.addEventListener("click", function() {
     mainImgFixed4.classList.remove("img-hidden");
 });
 
-/* Cerrar el cuadro modal */
 botonCerrar.addEventListener("click", function() {
     boxImgFixed.classList.add("box-img-fixed-hidden");
     boxImgFixed.classList.remove("box-img-fixed");
 });
-/* let fecha = new Date();
-alert(fecha.getDate().toString() + " " +fecha.getFullYear().toString()); */
+boxPlus.addEventListener("click", function() {
+    let cantidad = boxCantidad.innerHTML;
+    if (cantidad < 10) {
+    cantidad++; 
+    document.getElementById("boxCantidad").innerHTML = cantidad;
+}
+});
+

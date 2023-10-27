@@ -220,6 +220,7 @@ header {
     font-size: 3em;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .texto-producto {
     margin-top: 20px;
     color: rgb(120,120,120);
@@ -230,3 +231,53 @@ header {
 .botonCerrar {
     color: rgb(120,120,120);
 }
+.box-precio {
+    display: flex;
+    flex-direction: row;
+}
+.precio {
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 2.1em;
+}
+.descuento {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 600;
+}
+.lbl-descuento {
+    background-color:rgb(255, 234, 195);
+    padding: 5px 8px;
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    color: #fc7610;
+
+}.box-minus-plus{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 10px;
+}
+.box-minus, .box-cantidad, .box-plus {
+width: 50px;
+height:50px;
+display: flex;
+justify-content: center;
+align-items:center;
+font-size: 1.2em;
+font-weight: 700;
+}
+.box-minus, .box-plus {
+    color: #fc7610;
+}
+.box-precio-sin-desc{
+    color: rgb(126, 126, 126);
+    font-weight: 7000;
+    margin-top: 10px;
+    font-size: 1.1em;
+    text-decoration: line-through;
+}
+
