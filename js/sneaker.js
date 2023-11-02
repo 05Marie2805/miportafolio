@@ -1,4 +1,5 @@
 let mainImg = document.getElementById("mainImg");
+let boxImgFixed = document.getElementById("boxImgFixed")
 let iconLeft = document.getElementById("iconLeft");
 let iconRight = document.getElementById("iconRight");
 let mainImgFixed1 = document.getElementById("mainImgFixed1");
@@ -13,6 +14,7 @@ let botonCerrar = document.getElementById ("botonCerrar");
 let boxMinus = document.getElementById("boxMinus");
 let boxCantidad = document.getElementById("boxCantidad");
 let boxPlus = document.getElementById("boxPlus");
+let valorUnitario = 180000;
 
 
 mainImg.addEventListener("click" , function () {
@@ -89,15 +91,34 @@ thumb4.addEventListener ("click", function () {
     mainImgFixed3.classList.add ("img-hidden");
     mainImgFixed4.classList.remove("img-hidden");
     });
-
+/* Cerrar */
 botonCerrar.addEventListener("click" , function () {
     boxImgFixed.classList.add("box-img-fixed-hidden");
-    boxImgFixed.classList.remove("box-img-fixed");
-})
+    boxImgFixed.classList.remove("box-img-fixed")
+});
+/*valorUnitario */
+let valorUnitarioAux = Intl.NumberFormat("DE-de").format(valorUnitario)
+document.getElementById("precioUnitario").innerHTML = "$" + valorUnitarioAux;
+
 boxPlus.addEventListener("click", function() {
     let cantidad = boxCantidad.innerHTML;
     if (cantidad < 10) {
-    cantidad++; 
-    document.getElementById("boxCantidad").innerHTML = cantidad;
+        cantidad++; 
+        document.getElementById("boxCantidad").innerHTML = cantidad;
+        let valorTotalInt = cantidad * valorUnitario;
+        let valorTotalAux = Intl.NumberFormat("DE-de").format(valorTotalInt);
+        document.getElementById("valorTotal").innerHTML = "$" + valorTotalAux;
 }
 });
+
+boxMinus.addEventListener("click", function() {
+    let cantidad = boxCantidad.innerHTML;
+    if (cantidad > 0) {
+        cantidad--; 
+        document.getElementById("boxCantidad").innerHTML = cantidad;
+        let valorTotalInt = cantidad * valorUnitario;
+        let valorTotalAux = Intl.NumberFormat("DE-de").format(valorTotalInt);
+        document.getElementById("valorTotal").innerHTML = "$" + valorTotalAux;
+}
+});
+
