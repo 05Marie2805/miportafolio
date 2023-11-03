@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(64, 78, 237);
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template: "empty-left         logo   menu  box-btn-login empty-right"        100px /
+                    minmax(20px, 1fr)  200px  800px 100px     minmax(20px, 1fr);
+}
+
+
+.logo {
+    grid-area: logo;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(64, 78, 237);
+}
+
+.img-logo {
+    width: 90%;
+    height: 100px;
+}
+.botton {
+    font-size: .9em;
+    background-color: white;
+}
+.box-btn-login {
+    grid-area: box-btn-login;
+    display: flex;
+    align-items: center;
+}
+.btn-login {
+    background-color: white;
+    border-radius: 40px 40px 40px 40px;
+    justify-content: center;
+    height: 40px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(24,24,24);
+}
+.menu {
+    grid-area: menu;
+    width: 100%;
+    height: 100%;
+}
+
+.main-contents {
+    width: 100%;
+    height: 600px;
+}
+.img-fondo-grande {
+    width: 100%;
+    height: 600px;
+    top: 100px;
+    left: 0;
+    z-index: 10;
+}
+
+.img-fondo {
+    width: 100%;
+    height: 500px;
+}
+
+.img-principal {
+    background-image: url("../img/principal.png");
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    position: absolute;
+    z-index: -10; 
+}
+/* 1. llaman al box y crean un grid con 3 columnas, la primera y la última columna con 
+tamaño de 1fr y el centro lo dejan con un tamaño fijo */
+.main-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text {
+    width: 100%;
+    display: grid;
+    gap: 2.2rem;
+    grid-template:"img-principal main-text img-principal" 140px /
+                         1fr       350px       1fr;
+}
+
+.main-text h1 {
+    text-align: center;
+    font-size: 80px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+}
+
+.main-text .texto-prin {
+    width: 750px;
+    font-size: 1.2rem;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-buttons {
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.main-buttons button{
+    border: 0;
+    cursor: pointer;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+.main-buttons button.btn-white {
+    background: #fff;
+}
+
+.main-buttons button.btn-black {
+    background: #141414;
+    color: #fff;
+}
+
+.box-main-text {
+    grid-area: main-text;
+    z-index: 20;
+    color: white;
+}
+.main-nav {
+    background-color:rgb(64, 78, 237);
+    height: 100px;
+    width: 100%;
+    font-size: 1.0em;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 700;
+}
+.main-menu {
+    list-style: none;
+    text-align: center;
+}
+.item-style{
+    padding: 40px 30px 28px 30px;
+    display: inline-block;
+}
+.item-style:hover {
+    cursor: pointer;
+    background-color: rgb(86, 98, 235);
+}
+a {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-size: 1,3em;
+}
+.menu-bar {
+    display: none;
+}
+
+.conte {
+    display: grid;
+    gap: 2rem;
+    padding: 7rem 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.conte-1 {
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.conte-2 {
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.optional-background {
+    background: #F6F6F6;
+}
+
+.conte-2 img {
+    display: block;
+    margin-left: auto;
+}
+
+.conte-3 {
+    text-align: center;
+}
+.conte-3 h1{
+    font-size: 3rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+}
+
+.conte-3 img{
+    display: block;
+    margin: 0 auto;
+}
+
+.conte img {
+    width: 86%;
+}
+
+.text-conte {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.conte h2 {
+    line-height: 3.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 2rem;
+}
+
+.conte p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.btn-main {
+    background: #5865f2;
+    color: #ffff;
+}
+
+.box-gen {
+    background-color: #ffffff;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.8em;
+}
+
+.box-main-wrap {
+    gap: 20px;
+    height: 280px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.box-5 {
+    justify-content: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: Wrap;  
+}
+
+@media (max-width: 895px) {
+    .main-buttons {
+        flex-direction: column;
+    }
+    .main-text h1 {
+        width: 100%;
+        max-width: 460px;
+        text-align: start;
+
+    }
+    .main-text .texto-prin {
+        width: 100%;
+        margin: 0;
+        max-width: 460px;
+        font-size: 1rem;
+        text-align: start;
+    }
+    .main-buttons {
+        margin: 0;
+        width: 100%;
+        max-width: 350px;
+    }
+    .conte-1, .conte-2, .conte-3 {
+        grid-template-columns: 1fr;
+    }
+    .conte > div {
+        padding: 1rem 2.5rem;
+    }
+
+    .main-nav, .box-btn-login, .menu {
+        display: none;
+    }
+}
