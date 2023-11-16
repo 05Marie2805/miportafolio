@@ -21,7 +21,7 @@ html {
 }
 
 #inicio .contenido header {
-    background-color: rgba(25, 11, 149, 0.8)));
+    background-color: rgba(178, 170, 247, 0.8);
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -225,7 +225,7 @@ html {
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
-    color: #111135;
+    color:#6a50ff
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
@@ -269,7 +269,7 @@ html {
 #servicios .fila .servicio hr {
     width: 30%;
     margin: auto;
-    color: #000;
+    color: #7b0808;
     margin-bottom: 25px;
 }
 
@@ -415,7 +415,7 @@ html {
 
 #portfolio .fila .proyecto {
     max-width: 350px;
-    border: 1px solid #000;
+    border: 1px solid rgb(114, 107, 248), 33, 182);
     margin: 0 10px;
     position: relative;
     overflow: hidden;
@@ -425,7 +425,6 @@ html {
 
     width: 100%;
     height: 100%;
-    ;
     filter: grayscale(1);
     object-fit: cover;
     transition: .5s;
@@ -438,8 +437,8 @@ html {
 #portfolio .fila .proyecto .info {
     position: absolute;
     left: 0px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #ff5080;
+    background-color: rgba(53, 41, 166, 0.8);
+    color: rgb(255, 255, 255);
     width: 100%;
     padding: 10px;
     opacity: 0;
@@ -483,7 +482,7 @@ html {
     padding: 20px;
     border-radius: 20px;
     border: none;
-    border: 1px solid #919191;
+    border: 1px solid rgb(218, 108, 255) 30, 135;
 }
 
 #contacto .contenedor-form .mitad input {
