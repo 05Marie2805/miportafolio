@@ -14,7 +14,7 @@
         /* *********************/
         
         #inicio {
-            background: linear-gradient( rgba(24, 3, 107, 0.7), rgba(135, 68, 68, 0.7)), url("IMG/MIA\ 2.jpg");
+            background: linear-gradient( rgba(170, 150, 249, 0.7), rgba(135, 68, 68, 0.7)), url("IMG/MIA\ 2.jpg");
             background-size: cover;
             background-position: center center;
             height: 100vh;
@@ -39,7 +39,7 @@
         
         #inicio .contenido header .contenido-header h1 {
             text-align: center;
-            color: #161e70;
+            color: rgb(64, 74, 185));
         }
         
         #inicio .contenido header .contenido-header nav ul {
