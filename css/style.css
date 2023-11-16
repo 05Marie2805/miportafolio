@@ -248,7 +248,7 @@ html {
 }
 
 #servicios .fila .servicio:hover {
-    box-shadow: 5px 5px 10px #ffa2a2, -5px -5px 10px #8a8a8a;
+    box-shadow: 5px 5px 10px #6a50ff, -5px -5px 10px #6a50ff;
 }
 
 #servicios .fila .servicio .icono {
